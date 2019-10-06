@@ -76,6 +76,7 @@ device = torch.device("cuda")
 model = AlexNet()
 lr = 1e-5
 loss_func = torch.nn.CrossEntropyLoss()
+torch.optim.Adam()
 optimizer = torch.optim.SGD(list(model.parameters())[:], lr=lr, momentum=0.9)
 PATH = "/home/zhongjianping/桌面/mynet/cnn_model_with_pytorch/alexnet/model/_iter_999.pth"
 if os.path.exists(PATH):

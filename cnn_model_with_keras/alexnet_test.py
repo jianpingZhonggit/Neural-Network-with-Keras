@@ -20,7 +20,7 @@ channels = 3
 def read_image(img_name):
 	img = cv2.imread(img_name)
 	img = cv2.resize(img, (width, height))
-	# data = np.array(img)
+	data = np.array(img)
 	return data
 
 

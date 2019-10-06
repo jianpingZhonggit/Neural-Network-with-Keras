@@ -55,7 +55,7 @@ def get_model(pre_weight, input_size):
     fc3 = Dense(4096, activation='relu')(fc2)
 
     # output
-    output = Dense(103, activation='softmax')(fc3)
+    output = Dense(1000, activation='softmax')(fc3)
 
     model = Model(inputs=inputs, outputs=output)
 

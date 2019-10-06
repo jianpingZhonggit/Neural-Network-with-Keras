@@ -47,7 +47,7 @@ def get_alex_model(pre_weight, input_size):
     drop3 = Dropout(0.5)(fc3)
 
     # outputs
-    outputs = Dense(6, activation='softmax')(drop3)
+    outputs = Dense(1000, activation='softmax')(drop3)
 
     # model
     model = Model(inputs=inputs, outputs=outputs)
@@ -69,4 +69,6 @@ def get_alex_model(pre_weight, input_size):
     return model
 
 
-# model = get_alex_model('./aa.h5', (224, 224, 3))
+model = get_alex_model('./aa.h5', (224, 224, 3))
+
+

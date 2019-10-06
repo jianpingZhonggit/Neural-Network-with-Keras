@@ -1,4 +1,4 @@
-from cnn_model.vggnet_model import get_model
+from cnn_model_with_keras.vggnet_model import get_model
 width = 224
 height = 224
 channels = 3

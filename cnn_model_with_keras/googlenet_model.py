@@ -10,7 +10,7 @@ import keras.metrics as metric
 import os
 
 # Global Constants
-NB_CLASS=6
+NB_CLASS=1000
 LEARNING_RATE=0.01
 MOMENTUM=0.9
 ALPHA=0.0001
@@ -182,6 +182,6 @@ def check_print(pre_weight):
     return model
 
 
-model = check_print('./model.h5')
+model = check_print('./model+.h5')
 
 
